@@ -8,23 +8,19 @@ def mostrar_mensagem():
 
 # Criar a janela principal
 janela = tk.Tk()
-janela.title("Exemplo de interface")
-janela.geometry("400x150")
+janela.title("Interface avançada")
+janela.geometry("400x500")
 
-# Mudando cor de fundo da tela
-janela.config(bg="red")
 
 # Criar uma caixa de entrada (Entry)
-caixa_texto = tk.Entry(janela, width=60)
-caixa_texto.pack(pady=10)
+label_nome = tk.Label(janela, text="Digite seu nome:")
+label_nome.pack(pady=5)
+caixa_texto = tk.Entry(janela, width=40)
+caixa_texto.pack(pady=5)
 
 # Criar botão
 botao =tk.Button(janela, text="Mostrar Texto", command=mostrar_mensagem, bg="blue", fg="white")
 botao.pack(pady=5)
-
-# Criar um rótulo para mostrar resultado
-label_resultado = tk.Label(janela, text="", bg="red", fg="white")
-label_resultado.pack(pady=10)
 
 # Executar a tela principal
 janela.mainloop()
