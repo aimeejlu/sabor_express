@@ -18,9 +18,8 @@ label_nome.pack(pady=5)
 caixa_texto = tk.Entry(janela, width=40)
 caixa_texto.pack(pady=5)
 
-# Criar botão
-botao =tk.Button(janela, text="Mostrar Texto", command=mostrar_mensagem, bg="blue", fg="white")
-botao.pack(pady=5)
+# Criar botões de rádio
+
 
 # Executar a tela principal
 janela.mainloop()
